@@ -1,0 +1,62 @@
+1. Lister tous les patients
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+select * where {
+  ?x a h:Homme
+}
+
+2. Lister toutes les maladies
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+select * where {
+  ?x a h:Maladie
+}
+
+3. Lister tous les symptomes
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+select * where {
+  ?x a h:Symptome
+}
+
+4. Lister tous les médicaments
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+select * where {
+  ?x a h:Medicament
+}
+
+5. Lister les patients qui ont des vomissements
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+prefix i: <http://www.webofdata.fr/instances#>
+
+select * where {
+  ?x a h:Patient
+  ?x h:aLeSymptome i:Vomissement
+}
+
+6. Lister les symptomes de la gastro
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+prefix i: <http://www.webofdata.fr/instances#>
+
+select * where {
+  ?x a h:Symptome
+  ?x h:estProvoquePar i:GastroEnterite
+}
+
+7. Test inférence : si un patient a les symptomes fievre et migraine alors il a la grippe
+
+prefix h: <http://www.webofdata.fr/vocabulary#>
+prefix i: <http://www.webofdata.fr/instances#>
+
+select * where {
+  ?x a h:Patient
+  ?x h:aLeSymptome i:Migraine
+  ?x h:aLeSymptome i:Fievre
+  ?x h:aLaMaladie ?y
+}
+
+
+

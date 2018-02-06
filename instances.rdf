@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://www.webofdata.fr/vocabulary#">
+
+  <rdf:Description rdf:about="http://www.webofdata.fr/instances#Jean">
+    <rdf:type rdf:resource="http://www.webofdata.fr/vocabulary#Homme"/>
+    <ns0:nomPatient>Jean Dupuis</ns0:nomPatient>
+    <ns0:aLeSymptome>
+      <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Vomissement">
+        <ns0:description>rejet de la nourriture par voie orale</ns0:description>
+        <ns0:estProvoquePar>
+          <ns0:Maladie rdf:about="http://www.webofdata.fr/instances#GastroEnterite">
+            <ns0:nomMaladie>Gastro enterite</ns0:nomMaladie>
+          </ns0:Maladie>
+        </ns0:estProvoquePar>
+
+        <ns0:estSoignePar>
+          <ns0:Medicament rdf:about="http://www.webofdata.fr/instances#Smecta">
+            <ns0:nomMedicament>SMECTA Orange-Vanille</ns0:nomMedicament>
+          </ns0:Medicament>
+        </ns0:estSoignePar>
+
+      </ns0:Symptome>
+    </ns0:aLeSymptome>
+
+    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Migraine"/>
+  </rdf:Description>
+
+  <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Migraine">
+    <ns0:description>Douleur au niveau de la tete</ns0:description>
+    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
+    <ns0:estSoignePar>
+      <ns0:Medicament rdf:about="http://www.webofdata.fr/instances#Aspirine">
+        <ns0:nomMedicament>Aspirine UPSA 1000mg</ns0:nomMedicament>
+      </ns0:Medicament>
+    </ns0:estSoignePar>
+
+  </ns0:Symptome>
+
+  <ns0:Maladie rdf:about="http://www.webofdata.fr/instances#Grippe">
+    <ns0:nomMaladie>Grippe</ns0:nomMaladie>
+  </ns0:Maladie>
+
+  <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Fievre">
+    <ns0:description>Temperature corporelle anormalement eleve</ns0:description>
+    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
+    <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Aspire"/>
+  </ns0:Symptome>
+
+  <ns0:Homme rdf:about="http://www.webofdata.fr/instances#Vincent">
+    <ns0:nomPatient>Vincent Lagaf</ns0:nomPatient>
+    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Migraine"/>
+    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Fievre"/>
+  </ns0:Homme>
+
+</rdf:RDF>
