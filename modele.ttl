@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.webofdata.fr/vocabulary> .
+
+<#Patient> a rdfs:Class ;
+	rdfs:label "patient"@fr ;
+	rdfs:comment "un patient"@fr . 
+
+<#Femme> a rdfs:Class ;
+	rdfs:subClassOf <#Patient> .
+
+<#Homme> a rdfs:Class ;
+	rdfs:subClassOf <#Patient> .
+	
+<#Maladie> a rdfs:Class ;
+	rdfs:label "maladie"@fr ;
+	rdfs:comment "une maladie"@fr . 
+	
+<#Symptome> a rdfs:Class ;
+	rdfs:label "Symptome"@fr ;
+	rdfs:comment "Symptome d'un patient"@fr . 
+	
+<#Medicament> a rdfs:Class ;
+	rdfs:label "Medicament"@fr ;
+	rdfs:comment "Un medicament"@fr . 
+
+<#nomPatient> a rdf:Property ;
+	rdfs:label "nom"@fr ;
+	rdfs:comment "le nom du patient"@fr .
+	
+<#nomMaladie> a rdf:Property ;
+	rdfs:label "nom de la maladie"@fr ;
+	rdfs:comment "le nom de la maladie"@fr .
+	
+<#nomMedicament> a rdf:Property ;
+	rdfs:label "nom du medicament"@fr ;
+	rdfs:comment "le nom du medicament"@fr .	
+	
+<#description> a rdf:Property ;
+	rdfs:label "description"@fr ;
+	rdfs:comment "description du symptome"@fr .
+
+<#estSoignePar> a rdf:Property ;
+	rdfs:label "est soigne par"@fr ;
+	rdfs:comment "medicament qui soigne un symptome"@fr ;
+	rdfs:domain <#Symptome> ;
+	rdfs:range <#Medicament> .
+	
+<#aLaMaladie> a rdf:Property ;
+	rdfs:label "a la maladie"@fr ;
+	rdfs:comment "maladie assossie a un patient"@fr ;
+	rdfs:domain <#Patient> ;
+	rdfs:range <#Maladie> .
+	
+<#aLeSymptome> a rdf:Property ;
+	rdfs:label "a le symptome"@fr ;
+	rdfs:comment "symptome associe a un patient"@fr ;
+	rdfs:domain <#Patient> ;
+	rdfs:range <#Symptome> .
+	
+<#estProvoquePar> a rdf:Property ;
+	rdfs:label "est provoque par"@fr ;
+	rdfs:comment "symptome provoque par une maladie"@fr ;
+	rdfs:domain <#Symptome> ;
+	rdfs:range <#Maladie> .
