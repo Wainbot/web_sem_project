@@ -50,6 +50,11 @@
 	rdfs:label "Maladie Musculaire"@fr ;
 	rdfs:comment "Maladie lié aux muscles"@fr ;
 	rdfs:subClassOf <#Maladie> .
+
+<#MaladieDermatologiqe> a rdfs:Class ;
+	rdfs:label "Maladie du derme"@fr ;
+	rdfs:comment "Maladie lié à la peau"@fr ;
+	rdfs:subClassOf <#Maladie> .
 	
 <#Symptome> a rdfs:Class ;
 	rdfs:label "Symptome"@fr ;

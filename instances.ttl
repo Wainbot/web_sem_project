@@ -16,13 +16,40 @@
 	myns:description "Douleur au niveau de la tete";
 	myns:estProvoquePar <#Grippe>;
 	myns:estSoignePar <#Aspirine>.
-	
-<#Grippe> a myns:Maladie;
+
+<#Grippe> a myns:MaladieRespiratoire;
 	myns:nomMaladie "Grippe".
-	
-<#GastroEnterite> a myns:Maladie;
+
+<#Pharyngite> a myns:MaladieRespiratoire;
+	myns:nomMaladie "Pharyngite".
+
+<#GastroEnterite> a myns:MaladieTubeDigestif;
 	myns:nomMaladie "Gastro enterite".
-	
+
+<#Dysthymie> a myns:MaladieNeurologique;
+	myns:nomMaladie "Dysthymie" .
+
+<#Alzheimer> a myns:MaladieNeurologique;
+	myns:nomMaladie "Maladie d'Alzheimer" .
+
+<#Panniculite> a myns:MaladieDermatologique;
+	myns:nomMaladie "Pannicule" .
+
+<#Degos> a myns:MaladieDermatologique;
+	myns:nomMaladie "Maladie de Degos" .
+
+<#Candidos> a myns:MaladieDermatologique;
+	myns:nomMaladie "Candidos" .
+
+<#Pericardite> a myns:MaladieCardioVasculaire;
+	myns:nomMaladie "Pericardite" .
+
+<#Valvulopathie cardiaque> a myns:MaladieCardioVasculaire;
+	myns:nomMaladie "Maladie des valves cardiaques" .
+
+<#HTAP> a myns:MaladieCardioVasculaire;
+	myns:nomMaladie "Hypertension artérielle pulmonaire" .
+
 <#Aspirine> a myns:AntiInflammatoire;
 	myns:nomMedicament "Aspirine UPSA 1000mg" ;
 	myns:voieAdministration "orale" .
