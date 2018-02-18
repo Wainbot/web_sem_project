@@ -23,11 +23,13 @@
 <#GastroEnterite> a myns:Maladie;
 	myns:nomMaladie "Gastro enterite".
 	
-<#Aspirine> a myns:Medicament;
-	myns:nomMedicament "Aspirine UPSA 1000mg".
+<#Aspirine> a myns:AntiInflammatoire;
+	myns:nomMedicament "Aspirine UPSA 1000mg" ;
+	myns:voieAdministration "orale" .
 	
-<#Smecta> a myns:Medicament;
-	myns:nomMedicament "SMECTA Orange-Vanille".
+<#Smecta> a myns:AntiInflammatoire;
+	myns:nomMedicament "SMECTA Orange-Vanille" ;
+	myns:voieAdministration "orale" .
 	
 <#Fievre> a myns:Symptome;
 	myns:description "Temperature corporelle anormalement eleve";
@@ -37,3 +39,19 @@
 <#Vincent> a myns:Homme;
 	myns:nomPatient "Vincent Lagaf";
 	myns:aLeSymptome <#Migraine>, <#Fievre> .
+	
+<#Prozac> a myns:AntiDepresseur;
+	myns:nomMedicament "PROZAC 20 mg";
+	myns:voieAdministration "orale".
+	
+<#Fluorouracile> a myns:AntiMetabolite;
+	myns:nomMedicament "Fluorouracile" ;
+	myns:voieAdministration "injection".
+	
+<#Aspegic> a myns:AntiInflammatoire;
+	myns:nomMedicament "ASPÉGIC 1000" ;
+	myns:voieAdministration "orale" .
+	
+<#Ternormine> a myns:Betabloquant;
+	myns:nomMedicament "TENORMINE 50 mg" ;
+	myns:voieAdministration "orale".
