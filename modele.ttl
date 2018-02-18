@@ -70,7 +70,7 @@
 	rdfs:subClassOf <#Symptome> .
 	
 <#Medicament> a rdfs:Class ;
-	rdfs:label "Medicament"@fr 
+	rdfs:label "Medicament"@fr ;
 	rdfs:comment "Un medicament"@fr . 
 	
 <#Antibiotiques> a rdfs:Class ;
@@ -129,8 +129,8 @@
 	rdfs:subClassOf <#Medicament> .
 
 <#Antifongique> a rdfs:Class ;
-	rdfs:label "Antifongique"#fr ; 
-	rdfs:comment "Médicament qui tue les champignons parasitaires"
+	rdfs:label "Antifongique"@fr ; 
+	rdfs:comment "Médicament qui tue les champignons parasitaires" .
 
 <#nomPatient> a rdf:Property ;
 	rdfs:label "nom"@fr ;

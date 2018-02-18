@@ -38,7 +38,7 @@
 <#Pericardite> a myns:MaladieCardioVasculaire;
 	myns:nomMaladie "Pericardite" .
 
-<#Valvulopathie cardiaque> a myns:MaladieCardioVasculaire;
+<#ValvulopathieCardiaque> a myns:MaladieCardioVasculaire;
 	myns:nomMaladie "Maladie des valves cardiaques" .
 
 <#HTAP> a myns:MaladieCardioVasculaire;
