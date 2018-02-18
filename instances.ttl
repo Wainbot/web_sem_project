@@ -3,20 +3,14 @@
 @prefix myns: <http://www.webofdata.fr/vocabulary#> .
 @base <http://www.webofdata.fr/instances> . 
 
+<#Vincent> a myns:Homme;
+	myns:nomPatient "Vincent Lagaf";
+	myns:aLeSymptome <#Migraine>, <#Fievre> .
+
 <#Jean> a myns:Homme;
-	 myns:nomPatient "Jean Dupuis";
-	 myns:aLeSymptome <#Vomissement>, <#Migraine>.
-
-<#Vomissement> a myns:Symptome;
-	myns:description "rejet de la nourriture par voie orale";
-	myns:estProvoquePar <#GastroEnterite>;
-	myns:estSoignePar <#Smecta>.
+	myns:nomPatient "Jean Dupuis";
+	myns:aLeSymptome <#Vomissement>, <#Migraine>.
 	
-<#Migraine> a myns:Symptome;
-	myns:description "Douleur au niveau de la tete";
-	myns:estProvoquePar <#Grippe>;
-	myns:estSoignePar <#Aspirine>.
-
 <#Grippe> a myns:MaladieRespiratoire;
 	myns:nomMaladie "Grippe".
 
@@ -49,6 +43,21 @@
 
 <#HTAP> a myns:MaladieCardioVasculaire;
 	myns:nomMaladie "Hypertension artérielle pulmonaire" .
+	
+<#Vomissement> a myns:Symptome;
+	myns:description "rejet de la nourriture par voie orale";
+	myns:estProvoquePar <#GastroEnterite>;
+	myns:estSoignePar <#Smecta>.
+	
+<#Migraine> a myns:Symptome;
+	myns:description "Douleur au niveau de la tete";
+	myns:estProvoquePar <#Grippe>;
+	myns:estSoignePar <#Aspirine>.
+	
+<#Fievre> a myns:Symptome;
+	myns:description "Temperature corporelle anormalement eleve";
+	myns:estProvoquePar <#Grippe>;
+	myns:estSoignePar <#Aspirine> .
 
 <#Aspirine> a myns:AntiInflammatoire;
 	myns:nomMedicament "Aspirine UPSA 1000mg" ;
@@ -57,16 +66,7 @@
 <#Smecta> a myns:AntiInflammatoire;
 	myns:nomMedicament "SMECTA Orange-Vanille" ;
 	myns:voieAdministration "orale" .
-	
-<#Fievre> a myns:Symptome;
-	myns:description "Temperature corporelle anormalement eleve";
-	myns:estProvoquePar <#Grippe>;
-	myns:estSoignePar <#Aspire> .
-	
-<#Vincent> a myns:Homme;
-	myns:nomPatient "Vincent Lagaf";
-	myns:aLeSymptome <#Migraine>, <#Fievre> .
-	
+
 <#Prozac> a myns:AntiDepresseur;
 	myns:nomMedicament "PROZAC 20 mg";
 	myns:voieAdministration "orale".

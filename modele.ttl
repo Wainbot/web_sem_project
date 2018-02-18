@@ -50,7 +50,7 @@
 	rdfs:label "Maladie Musculaire"@fr ;
 	rdfs:comment "Maladie lié aux muscles"@fr ;
 	rdfs:subClassOf <#Maladie> .
-
+	
 <#MaladieDermatologiqe> a rdfs:Class ;
 	rdfs:label "Maladie du derme"@fr ;
 	rdfs:comment "Maladie lié à la peau"@fr ;
@@ -70,7 +70,7 @@
 	rdfs:subClassOf <#Symptome> .
 	
 <#Medicament> a rdfs:Class ;
-	rdfs:label "Medicament"@fr ;
+	rdfs:label "Medicament"@fr 
 	rdfs:comment "Un medicament"@fr . 
 	
 <#Antibiotiques> a rdfs:Class ;
@@ -81,6 +81,21 @@
 <#AntiInflammatoire> a rdfs:Class ;
 	rdfs:label "Anti Inflammatoire"@fr ;
 	rdfs:comment "Médicaments destinés à traiter une réaction inflammatoire et les maladies qui en résultent"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#AntiDepresseur> a rdfs:Class ;
+	rdfs:label "Anti depresseur"@fr ;
+	rdfs:comment "Les antidépresseurs sont des médicaments psychotropes utilisés notamment contre la dépression"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#AntiCoagulant> a rdfs:Class ;
+	rdfs:label "Anti coagulant"@fr ;
+	rdfs:comment "Les médicaments anticoagulants ont pour effet d'éviter la formation de caillots sanguins (thrombus) dans les veines, les artères ou le cœur"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#Betabloquant> a rdfs:Class ;
+	rdfs:label "Betabloquant"@fr ;
+	rdfs:comment "Les médicaments bétabloquants réduisent la fréquence cardiaque et la force d’éjection du sang par le coeur"@fr ;
 	rdfs:subClassOf <#Medicament> .
 	
 <#Laxatif> a rdfs:Class ;
@@ -105,8 +120,17 @@
 	
 <#AntiTussif> a rdfs:Class ;
 	rdfs:label "Anti tussif"@fr ;
-	rdfs:comment "Un antitussif ou médicament antitussif est un médicament censé arrêter la toux"@fr ;
+	rdfs:comment "Un antitussif ou médicament antitussif est un médicament agissant sur la toux"@fr ;
 	rdfs:subClassOf <#Medicament> .
+
+<#AntiMetabolite> a rdfs:Class ;
+	rdfs:label "Anti Metabolite"@fr ;
+	rdfs:comment "Un antimétabolite est une substance chimique qui empêche l'utilisation d'un métabolite, qui est un autre produit chimique qui fait partie du métabolisme normal"@fr ;
+	rdfs:subClassOf <#Medicament> .
+
+<#Antifongique> a rdfs:Class ;
+	rdfs:label "Antifongique"#fr ; 
+	rdfs:comment "Médicament qui tue les champignons parasitaires"
 
 <#nomPatient> a rdf:Property ;
 	rdfs:label "nom"@fr ;
@@ -118,7 +142,11 @@
 	
 <#nomMedicament> a rdf:Property ;
 	rdfs:label "nom du medicament"@fr ;
-	rdfs:comment "le nom du medicament"@fr .	
+	rdfs:comment "le nom du medicament"@fr .
+
+<#voieAdministration> a rdf:Property ;	
+	rdfs:label "voie administration"@fr ;
+	rdfs:comment "la voie dont le medicament est administré au patient"@fr .
 	
 <#description> a rdf:Property ;
 	rdfs:label "description"@fr ;
