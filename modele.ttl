@@ -16,13 +16,92 @@
 	rdfs:label "maladie"@fr ;
 	rdfs:comment "une maladie"@fr . 
 	
+<#MaladieCardiovasculaire> a rdfs:Class ;
+	rdfs:label "Maladie Cardiaque"@fr ;
+	rdfs:comment "Les maladies cardiovasculaires englobent une multitude de maladies liées à un mauvais fonctionnement du coeur ou des vaisseaux sanguins qui l’alimentent"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieNeurologique> a rdfs:Class ;
+	rdfs:label "Maladie neurologique"@fr ;
+	rdfs:comment "Maladie touchant au système nerveux du corps"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieRespiratoire> a rdfs:Class ;
+	rdfs:label "Maladie respiratoire"@fr ;
+	rdfs:comment "Une maladie respiratoire est une maladie de l'appareil respiratoire ou provoquant des troubles de la respiration"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieTubeDigestif> a rdfs:Class ;
+	rdfs:label "Maladie du tube digestif"@fr ;
+	rdfs:comment "Maladie lié au système digestif"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieOsseuse> a rdfs:Class ;
+	rdfs:label "Maladie osseuses"@fr ;
+	rdfs:comment "Une maladie osseuse est une pathologie qui affecte les os et/ou les articulations. "@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieVasculaire> a rdfs:Class ;
+	rdfs:label "Maladie vasculaire"@fr ;
+	rdfs:comment "Les maladies vasculaires sont le résultat de dommages causés aux vaisseaux sanguins dans l'ensemble du corps"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
+<#MaladieMusculaire> a rdfs:Class ;
+	rdfs:label "Maladie Musculaire"@fr ;
+	rdfs:comment "Maladie lié aux muscles"@fr ;
+	rdfs:subClassOf <#Maladie> .
+	
 <#Symptome> a rdfs:Class ;
 	rdfs:label "Symptome"@fr ;
 	rdfs:comment "Symptome d'un patient"@fr . 
 	
+<#SymptomeGeneral> a rdfs:Class ;
+	rdfs:label "Symptome general"@fr ;
+	rdfs:subClassOf <#Symptome> .
+	
+<#SymptomeFonctionnel> a rdfs:Class ;
+	rdfs:label "Symptome fonctionnel"@fr ;
+	rdfs:comment "Un symptôme fonctionnel permet d'établir un diagnostic, il fait partie des signes (symptômes) cliniques d'une maladie"@fr ;
+	rdfs:subClassOf <#Symptome> .
+	
 <#Medicament> a rdfs:Class ;
 	rdfs:label "Medicament"@fr ;
 	rdfs:comment "Un medicament"@fr . 
+	
+<#Antibiotiques> a rdfs:Class ;
+	rdfs:label "Antibiotique"@fr ;
+	rdfs:comment "Substance naturelle ou synthétique qui détruit ou bloque la croissance des bactéries"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#AntiInflammatoire> a rdfs:Class ;
+	rdfs:label "Anti Inflammatoire"@fr ;
+	rdfs:comment "Médicaments destinés à traiter une réaction inflammatoire et les maladies qui en résultent"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#Laxatif> a rdfs:Class ;
+	rdfs:label "Laxatif"@fr ;
+	rdfs:comment "Un laxatif est un produit accélérant le transit intestinal, ramollissant les selles"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#Vasoconstricteurs> a rdfs:Class ;
+	rdfs:label "Vasoconstricteur"@fr ;
+	rdfs:comment "Un vasoconstricteur est une substance qui agit de façon à rétrécir les vaisseaux sanguins"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#Vasodilatateurs> a rdfs:Class ;
+	rdfs:label "Vasodilatateur"@fr ;
+	rdfs:comment "Un vasodilatateur est une substance qui agit de façon à dilater les vaisseaux sanguins"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#Anesthesique> a rdfs:Class ;
+	rdfs:label "Anesthesique"@fr ;
+	rdfs:comment "Substance médicamenteuse qui provoque l'anesthésie"@fr ;
+	rdfs:subClassOf <#Medicament> .
+	
+<#AntiTussif> a rdfs:Class ;
+	rdfs:label "Anti tussif"@fr ;
+	rdfs:comment "Un antitussif ou médicament antitussif est un médicament censé arrêter la toux"@fr ;
+	rdfs:subClassOf <#Medicament> .
 
 <#nomPatient> a rdf:Property ;
 	rdfs:label "nom"@fr ;
