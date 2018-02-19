@@ -118,9 +118,9 @@
 	rdfs:comment "Substance médicamenteuse qui provoque l'anesthésie"@fr ;
 	rdfs:subClassOf <#Medicament> .
 	
-<#AntiTussif> a rdfs:Class ;
-	rdfs:label "Anti tussif"@fr ;
-	rdfs:comment "Un antitussif ou médicament antitussif est un médicament agissant sur la toux"@fr ;
+<#Antitussif> a rdfs:Class ;
+	rdfs:label "Antitussif"@fr ;
+	rdfs:comment "Un antitussif ou médicament antitussif est un médicament censé arrêter la toux.Le type d'antitussif adéquat dépend de la nature de la toux : Les toux sèches sont traitées par des suppresseurs de la toux (antitussifs) qui suppriment le besoin urgent de tousser. Les toux productives ou toux grasses (toux associées à des expectorations) sont traitées avec des expectorants, médicaments visant à produire et expulser le mucus de la trachée."@fr ;
 	rdfs:subClassOf <#Medicament> .
 
 <#AntiMetabolite> a rdfs:Class ;

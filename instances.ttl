@@ -15,7 +15,9 @@
 	myns:nomMaladie "Grippe".
 
 <#Pharyngite> a myns:MaladieRespiratoire;
-	myns:nomMaladie "Pharyngite".
+	myns:nomMaladie "Pharyngite" ;
+	myns:seSoignePar <#Oxomemazine> ;
+	myns:seSoignePar <#Aspirine> .
 
 <#GastroEnterite> a myns:MaladieTubeDigestif;
 	myns:nomMaladie "Gastro enterite" ;
@@ -40,7 +42,7 @@
 	myns:seSoignePar <#Flucytosine> .
 
 <#Pericardite> a myns:MaladieCardioVasculaire;
-	myns:nomMaladie "Pericardite" ;
+	myns:nomMaladie "Pericardite" .
 
 <#ValvulopathieCardiaque> a myns:MaladieCardioVasculaire;
 	myns:nomMaladie "Maladie des valves cardiaques" .
@@ -63,6 +65,11 @@
 	myns:description "Temperature corporelle anormalement élevé";
 	myns:estProvoquePar <#Grippe>;
 	myns:estSoignePar <#Aspirine> .
+	
+<#Toux> a myns:SymptomeFonctionnel ;
+	myns:description "La toux est un acte réflexe destiné à protéger les voies aériennes, en éliminant les sécrétions bronchiques et les particules inhalées.";
+	myns:estProvoquePar <#Pharyngite>;
+	myns:estSoignePar <#Oxomemazine> .
 
 <#Aspirine> a myns:AntiInflammatoire;
 	myns:nomMedicament "Aspirine UPSA 1000mg" ;
@@ -102,6 +109,10 @@
 	
 <#Ibuprofene> a myns:AntiInflammatoire ;
 	myns:nomMedicament "Ibuprofene" ;
+	myns:voieAdministration "orale" .
+	
+<#Oxomemazine> a myns:Antitussif ;
+	myns:nomMedicament "Oxomemazine" ;
 	myns:voieAdministration "orale" .
 	
 
