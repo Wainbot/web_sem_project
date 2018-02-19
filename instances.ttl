@@ -18,44 +18,49 @@
 	myns:nomMaladie "Pharyngite".
 
 <#GastroEnterite> a myns:MaladieTubeDigestif;
-	myns:nomMaladie "Gastro enterite".
+	myns:nomMaladie "Gastro enterite" ;
+	myns:seSoignePar <#Smecta> .
 
 <#Dysthymie> a myns:MaladieNeurologique;
 	myns:nomMaladie "Dysthymie" .
 
 <#Alzheimer> a myns:MaladieNeurologique;
-	myns:nomMaladie "Maladie d'Alzheimer" .
+	myns:nomMaladie "Maladie d'Alzheimer" ;
+	myns:seSoignePar <#Donepezil> .
 
 <#Panniculite> a myns:MaladieDermatologique;
 	myns:nomMaladie "Pannicule" .
 
 <#Degos> a myns:MaladieDermatologique;
-	myns:nomMaladie "Maladie de Degos" .
+	myns:nomMaladie "Maladie de Degos" ;
+	myns:seSoignePar <#Dipyridamole> .
 
 <#Candidos> a myns:MaladieDermatologique;
-	myns:nomMaladie "Candidos" .
+	myns:nomMaladie "Candidos" ;
+	myns:seSoignePar <#Flucytosine> .
 
 <#Pericardite> a myns:MaladieCardioVasculaire;
-	myns:nomMaladie "Pericardite" .
+	myns:nomMaladie "Pericardite" ;
 
 <#ValvulopathieCardiaque> a myns:MaladieCardioVasculaire;
 	myns:nomMaladie "Maladie des valves cardiaques" .
 
 <#HTAP> a myns:MaladieCardioVasculaire;
-	myns:nomMaladie "Hypertension artérielle pulmonaire" .
+	myns:nomMaladie "Hypertension artérielle pulmonaire" ;
+	myns:seSoignePar <#Ternormine> .
 	
-<#Vomissement> a myns:Symptome;
+<#Vomissement> a myns:SymptomeGeneral;
 	myns:description "rejet de la nourriture par voie orale";
 	myns:estProvoquePar <#GastroEnterite>;
 	myns:estSoignePar <#Smecta>.
 	
-<#Migraine> a myns:Symptome;
-	myns:description "Douleur au niveau de la tete";
+<#Migraine> a myns:SymptomeGeneral;
+	myns:description "La migraine (du grec ancien ημικρανίον / êmikraníon, douleur touchant la « moitié du crâne ») est un type de céphalée (mal de tête) chronique fréquente, invalidante, caractérisée par des maux de tête et des nausées. La migraine est trois fois plus fréquente chez les femmes que chez les hommes. Une migraine dure généralement entre 4 et 72 heures selon sa sévérité ; les symptômes incluent nausées, vomissements, photophobie (grande sensibilité à la lumière), phonophobie (grande sensibilité au son) ; les symptômes s'aggravent généralement à cause des activités physiques. Approximativement un tiers des individus souffrant d'une migraine fait l'expérience d'une aura, illusion visuelle ou autre trouble d'ordre sensoriel ou moteur juste avant la céphalée. On pense que les migraines sont causées par l'association de facteurs environnementaux et de facteurs génétiques. Environ deux tiers des cas ont un contexte familial. L’Organisation mondiale de la santé classe la maladie migraineuse au 20e rang des maladies ayant un impact sur le handicap et l’altération de la qualité de vie, et parmi les 10 premières maladies si l’on considère uniquement la population féminine.";
 	myns:estProvoquePar <#Grippe>;
 	myns:estSoignePar <#Aspirine>.
 	
-<#Fievre> a myns:Symptome;
-	myns:description "Temperature corporelle anormalement eleve";
+<#Fievre> a myns:SymptomeGeneral;
+	myns:description "Temperature corporelle anormalement élevé";
 	myns:estProvoquePar <#Grippe>;
 	myns:estSoignePar <#Aspirine> .
 
@@ -81,4 +86,24 @@
 	
 <#Ternormine> a myns:Betabloquant;
 	myns:nomMedicament "TENORMINE 50 mg" ;
-	myns:voieAdministration "orale".
+	myns:voieAdministration "orale" .
+	
+<#Donepezil> a myns:Anticholinesterasique;
+	myns:nomMedicament "Donépézil" ;
+	myns:voieAdministration "orale" .
+	
+<#Dipyridamole> a myns:Anticoagulant;
+	myns:nomMedicament "Dipyridamole" ;
+	myns:voieAdministration "orale" .
+	
+<#Flucytosine> a myns:Antimycosique ;
+	myns:nomMedicament "Flucytosine" ;
+	myns:voieAdministration "orale" .
+	
+<#Ibuprofene> a myns:AntiInflammatoire ;
+	myns:nomMedicament "Ibuprofene" ;
+	myns:voieAdministration "orale" .
+	
+
+	
+	

@@ -128,9 +128,17 @@
 	rdfs:comment "Un antimétabolite est une substance chimique qui empêche l'utilisation d'un métabolite, qui est un autre produit chimique qui fait partie du métabolisme normal"@fr ;
 	rdfs:subClassOf <#Medicament> .
 
-<#Antifongique> a rdfs:Class ;
-	rdfs:label "Antifongique"@fr ; 
+<#Antimycosique> a rdfs:Class ;
+	rdfs:label "Antimycosique"@fr ; 
 	rdfs:comment "Médicament qui tue les champignons parasitaires" .
+	
+<#Anticoagulant> a rdfs:Class ;
+	rdfs:label "Anticoagulant"@fr ; 
+	rdfs:comment "Un anticoagulant est une substance qui a pour propriété de limiter le potentiel de coagulation du sang et de le fluidifier." .
+	
+<#Anticholinesterasique> a rdfs:Class ;
+	rdfs:label "Anticholinesterasique"@fr ; 
+	rdfs:comment "Les substances anticholinesterasiques sont des inhibiteurs d'une enzyme cholinestérase responsable de la dégradation de l'acétylcholine" .
 
 <#nomPatient> a rdf:Property ;
 	rdfs:label "nom"@fr ;
@@ -156,6 +164,12 @@
 	rdfs:label "est soigne par"@fr ;
 	rdfs:comment "medicament qui soigne un symptome"@fr ;
 	rdfs:domain <#Symptome> ;
+	rdfs:range <#Medicament> .
+	
+<#seSoigneAvec> a rdf:Property ;
+	rdfs:label "se soigne par"@fr ;
+	rdfs:comment "medicament qui soigne un symptome" ;
+	rdfs:domain <#Maladie> ;
 	rdfs:range <#Medicament> .
 	
 <#aLaMaladie> a rdf:Property ;
