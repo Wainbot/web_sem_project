@@ -20,14 +20,154 @@
     <rdfs:comment xml:lang="fr">une maladie</rdfs:comment>
   </rdfs:Class>
 
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieCardiovasculaire">
+    <rdfs:label xml:lang="fr">Maladie Cardiaque</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les maladies cardiovasculaires englobent une multitude de maladies liées à un mauvais fonctionnement du coeur ou des vaisseaux sanguins qui l’alimentent</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieNeurologique">
+    <rdfs:label xml:lang="fr">Maladie neurologique</rdfs:label>
+    <rdfs:comment xml:lang="fr">Maladie touchant au système nerveux du corps</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieRespiratoire">
+    <rdfs:label xml:lang="fr">Maladie respiratoire</rdfs:label>
+    <rdfs:comment xml:lang="fr">Une maladie respiratoire est une maladie de l'appareil respiratoire ou provoquant des troubles de la respiration</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieTubeDigestif">
+    <rdfs:label xml:lang="fr">Maladie du tube digestif</rdfs:label>
+    <rdfs:comment xml:lang="fr">Maladie lié au système digestif</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieOsseuse">
+    <rdfs:label xml:lang="fr">Maladie osseuses</rdfs:label>
+    <rdfs:comment xml:lang="fr">Une maladie osseuse est une pathologie qui affecte les os et/ou les articulations. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieVasculaire">
+    <rdfs:label xml:lang="fr">Maladie vasculaire</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les maladies vasculaires sont le résultat de dommages causés aux vaisseaux sanguins dans l'ensemble du corps</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieMusculaire">
+    <rdfs:label xml:lang="fr">Maladie Musculaire</rdfs:label>
+    <rdfs:comment xml:lang="fr">Maladie lié aux muscles</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#MaladieDermatologiqe">
+    <rdfs:label xml:lang="fr">Maladie du derme</rdfs:label>
+    <rdfs:comment xml:lang="fr">Maladie lié à la peau</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
+  </rdfs:Class>
+
   <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Symptome">
     <rdfs:label xml:lang="fr">Symptome</rdfs:label>
     <rdfs:comment xml:lang="fr">Symptome d'un patient</rdfs:comment>
   </rdfs:Class>
 
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#SymptomeGeneral">
+    <rdfs:label xml:lang="fr">Symptome general</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Symptome"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#SymptomeFonctionnel">
+    <rdfs:label xml:lang="fr">Symptome fonctionnel</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un symptôme fonctionnel permet d'établir un diagnostic, il fait partie des signes (symptômes) cliniques d'une maladie</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Symptome"/>
+  </rdfs:Class>
+
   <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Medicament">
     <rdfs:label xml:lang="fr">Medicament</rdfs:label>
     <rdfs:comment xml:lang="fr">Un medicament</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Antibiotiques">
+    <rdfs:label xml:lang="fr">Antibiotique</rdfs:label>
+    <rdfs:comment xml:lang="fr">Substance naturelle ou synthétique qui détruit ou bloque la croissance des bactéries</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#AntiInflammatoire">
+    <rdfs:label xml:lang="fr">Anti Inflammatoire</rdfs:label>
+    <rdfs:comment xml:lang="fr">Médicaments destinés à traiter une réaction inflammatoire et les maladies qui en résultent</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#AntiDepresseur">
+    <rdfs:label xml:lang="fr">Anti depresseur</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les antidépresseurs sont des médicaments psychotropes utilisés notamment contre la dépression</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#AntiCoagulant">
+    <rdfs:label xml:lang="fr">Anti coagulant</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les médicaments anticoagulants ont pour effet d'éviter la formation de caillots sanguins (thrombus) dans les veines, les artères ou le cœur</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Betabloquant">
+    <rdfs:label xml:lang="fr">Betabloquant</rdfs:label>
+    <rdfs:comment xml:lang="fr">Les médicaments bétabloquants réduisent la fréquence cardiaque et la force d’éjection du sang par le coeur</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Laxatif">
+    <rdfs:label xml:lang="fr">Laxatif</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un laxatif est un produit accélérant le transit intestinal, ramollissant les selles</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Vasoconstricteurs">
+    <rdfs:label xml:lang="fr">Vasoconstricteur</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un vasoconstricteur est une substance qui agit de façon à rétrécir les vaisseaux sanguins</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Vasodilatateurs">
+    <rdfs:label xml:lang="fr">Vasodilatateur</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un vasodilatateur est une substance qui agit de façon à dilater les vaisseaux sanguins</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Anesthesique">
+    <rdfs:label xml:lang="fr">Anesthesique</rdfs:label>
+    <rdfs:comment xml:lang="fr">Substance médicamenteuse qui provoque l'anesthésie</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Antitussif">
+    <rdfs:label xml:lang="fr">Antitussif</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un antitussif ou médicament antitussif est un médicament censé arrêter la toux.Le type d'antitussif adéquat dépend de la nature de la toux : Les toux sèches sont traitées par des suppresseurs de la toux (antitussifs) qui suppriment le besoin urgent de tousser. Les toux productives ou toux grasses (toux associées à des expectorations) sont traitées avec des expectorants, médicaments visant à produire et expulser le mucus de la trachée.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#AntiMetabolite">
+    <rdfs:label xml:lang="fr">Anti Metabolite</rdfs:label>
+    <rdfs:comment xml:lang="fr">Un antimétabolite est une substance chimique qui empêche l'utilisation d'un métabolite, qui est un autre produit chimique qui fait partie du métabolisme normal</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Antimycosique">
+    <rdfs:label xml:lang="fr">Antimycosique</rdfs:label>
+    <rdfs:comment>Médicament qui tue les champignons parasitaires</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Anticoagulant">
+    <rdfs:label xml:lang="fr">Anticoagulant</rdfs:label>
+    <rdfs:comment>Un anticoagulant est une substance qui a pour propriété de limiter le potentiel de coagulation du sang et de le fluidifier.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://www.webofdata.fr/vocabulary#Anticholinesterasique">
+    <rdfs:label xml:lang="fr">Anticholinesterasique</rdfs:label>
+    <rdfs:comment>Les substances anticholinesterasiques sont des inhibiteurs d'une enzyme cholinestérase responsable de la dégradation de l'acétylcholine</rdfs:comment>
   </rdfs:Class>
 
   <rdf:Property rdf:about="http://www.webofdata.fr/vocabulary#nomPatient">
@@ -45,6 +185,11 @@
     <rdfs:comment xml:lang="fr">le nom du medicament</rdfs:comment>
   </rdf:Property>
 
+  <rdf:Property rdf:about="http://www.webofdata.fr/vocabulary#voieAdministration">
+    <rdfs:label xml:lang="fr">voie administration</rdfs:label>
+    <rdfs:comment xml:lang="fr">la voie dont le medicament est administré au patient</rdfs:comment>
+  </rdf:Property>
+
   <rdf:Property rdf:about="http://www.webofdata.fr/vocabulary#description">
     <rdfs:label xml:lang="fr">description</rdfs:label>
     <rdfs:comment xml:lang="fr">description du symptome</rdfs:comment>
@@ -54,6 +199,13 @@
     <rdfs:label xml:lang="fr">est soigne par</rdfs:label>
     <rdfs:comment xml:lang="fr">medicament qui soigne un symptome</rdfs:comment>
     <rdfs:domain rdf:resource="http://www.webofdata.fr/vocabulary#Symptome"/>
+    <rdfs:range rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://www.webofdata.fr/vocabulary#seSoigneAvec">
+    <rdfs:label xml:lang="fr">se soigne par</rdfs:label>
+    <rdfs:comment>medicament qui soigne un symptome</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.webofdata.fr/vocabulary#Maladie"/>
     <rdfs:range rdf:resource="http://www.webofdata.fr/vocabulary#Medicament"/>
   </rdf:Property>
 

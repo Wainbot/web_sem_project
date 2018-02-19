@@ -2,55 +2,154 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:ns0="http://www.webofdata.fr/vocabulary#">
 
-  <rdf:Description rdf:about="http://www.webofdata.fr/instances#Jean">
+  <rdf:Description rdf:about="http://www.webofdata.fr/instances#Vincent">
     <rdf:type rdf:resource="http://www.webofdata.fr/vocabulary#Homme"/>
+    <ns0:nomPatient>Vincent Lagaf</ns0:nomPatient>
+    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Migraine"/>
+    <ns0:aLeSymptome>
+      <ns0:SymptomeGeneral rdf:about="http://www.webofdata.fr/instances#Fievre">
+        <ns0:description>Temperature corporelle anormalement élevé</ns0:description>
+        <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
+        <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Aspirine"/>
+      </ns0:SymptomeGeneral>
+    </ns0:aLeSymptome>
+
+  </rdf:Description>
+
+  <ns0:Homme rdf:about="http://www.webofdata.fr/instances#Jean">
     <ns0:nomPatient>Jean Dupuis</ns0:nomPatient>
     <ns0:aLeSymptome>
-      <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Vomissement">
+      <ns0:SymptomeGeneral rdf:about="http://www.webofdata.fr/instances#Vomissement">
         <ns0:description>rejet de la nourriture par voie orale</ns0:description>
         <ns0:estProvoquePar>
-          <ns0:Maladie rdf:about="http://www.webofdata.fr/instances#GastroEnterite">
+          <ns0:MaladieTubeDigestif rdf:about="http://www.webofdata.fr/instances#GastroEnterite">
             <ns0:nomMaladie>Gastro enterite</ns0:nomMaladie>
-          </ns0:Maladie>
+            <ns0:seSoignePar rdf:resource="http://www.webofdata.fr/instances#Smecta"/>
+          </ns0:MaladieTubeDigestif>
         </ns0:estProvoquePar>
 
-        <ns0:estSoignePar>
-          <ns0:Medicament rdf:about="http://www.webofdata.fr/instances#Smecta">
-            <ns0:nomMedicament>SMECTA Orange-Vanille</ns0:nomMedicament>
-          </ns0:Medicament>
-        </ns0:estSoignePar>
-
-      </ns0:Symptome>
+        <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Smecta"/>
+      </ns0:SymptomeGeneral>
     </ns0:aLeSymptome>
 
     <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Migraine"/>
-  </rdf:Description>
-
-  <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Migraine">
-    <ns0:description>Douleur au niveau de la tete</ns0:description>
-    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
-    <ns0:estSoignePar>
-      <ns0:Medicament rdf:about="http://www.webofdata.fr/instances#Aspirine">
-        <ns0:nomMedicament>Aspirine UPSA 1000mg</ns0:nomMedicament>
-      </ns0:Medicament>
-    </ns0:estSoignePar>
-
-  </ns0:Symptome>
-
-  <ns0:Maladie rdf:about="http://www.webofdata.fr/instances#Grippe">
-    <ns0:nomMaladie>Grippe</ns0:nomMaladie>
-  </ns0:Maladie>
-
-  <ns0:Symptome rdf:about="http://www.webofdata.fr/instances#Fievre">
-    <ns0:description>Temperature corporelle anormalement eleve</ns0:description>
-    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
-    <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Aspire"/>
-  </ns0:Symptome>
-
-  <ns0:Homme rdf:about="http://www.webofdata.fr/instances#Vincent">
-    <ns0:nomPatient>Vincent Lagaf</ns0:nomPatient>
-    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Migraine"/>
-    <ns0:aLeSymptome rdf:resource="http://www.webofdata.fr/instances#Fievre"/>
   </ns0:Homme>
+
+  <ns0:MaladieRespiratoire rdf:about="http://www.webofdata.fr/instances#Grippe">
+    <ns0:nomMaladie>Grippe</ns0:nomMaladie>
+  </ns0:MaladieRespiratoire>
+
+  <ns0:MaladieRespiratoire rdf:about="http://www.webofdata.fr/instances#Pharyngite">
+    <ns0:nomMaladie>Pharyngite</ns0:nomMaladie>
+    <ns0:seSoignePar rdf:resource="http://www.webofdata.fr/instances#Oxomemazine"/>
+    <ns0:seSoignePar rdf:resource="http://www.webofdata.fr/instances#Aspirine"/>
+  </ns0:MaladieRespiratoire>
+
+  <ns0:MaladieNeurologique rdf:about="http://www.webofdata.fr/instances#Dysthymie">
+    <ns0:nomMaladie>Dysthymie</ns0:nomMaladie>
+  </ns0:MaladieNeurologique>
+
+  <ns0:MaladieNeurologique rdf:about="http://www.webofdata.fr/instances#Alzheimer">
+    <ns0:nomMaladie>Maladie d'Alzheimer</ns0:nomMaladie>
+    <ns0:seSoignePar>
+      <ns0:Anticholinesterasique rdf:about="http://www.webofdata.fr/instances#Donepezil">
+        <ns0:nomMedicament>Donépézil</ns0:nomMedicament>
+        <ns0:voieAdministration>orale</ns0:voieAdministration>
+      </ns0:Anticholinesterasique>
+    </ns0:seSoignePar>
+
+  </ns0:MaladieNeurologique>
+
+  <ns0:MaladieDermatologique rdf:about="http://www.webofdata.fr/instances#Panniculite">
+    <ns0:nomMaladie>Pannicule</ns0:nomMaladie>
+  </ns0:MaladieDermatologique>
+
+  <ns0:MaladieDermatologique rdf:about="http://www.webofdata.fr/instances#Degos">
+    <ns0:nomMaladie>Maladie de Degos</ns0:nomMaladie>
+    <ns0:seSoignePar>
+      <ns0:Anticoagulant rdf:about="http://www.webofdata.fr/instances#Dipyridamole">
+        <ns0:nomMedicament>Dipyridamole</ns0:nomMedicament>
+        <ns0:voieAdministration>orale</ns0:voieAdministration>
+      </ns0:Anticoagulant>
+    </ns0:seSoignePar>
+
+  </ns0:MaladieDermatologique>
+
+  <ns0:MaladieDermatologique rdf:about="http://www.webofdata.fr/instances#Candidos">
+    <ns0:nomMaladie>Candidos</ns0:nomMaladie>
+    <ns0:seSoignePar>
+      <ns0:Antimycosique rdf:about="http://www.webofdata.fr/instances#Flucytosine">
+        <ns0:nomMedicament>Flucytosine</ns0:nomMedicament>
+        <ns0:voieAdministration>orale</ns0:voieAdministration>
+      </ns0:Antimycosique>
+    </ns0:seSoignePar>
+
+  </ns0:MaladieDermatologique>
+
+  <ns0:MaladieCardioVasculaire rdf:about="http://www.webofdata.fr/instances#Pericardite">
+    <ns0:nomMaladie>Pericardite</ns0:nomMaladie>
+  </ns0:MaladieCardioVasculaire>
+
+  <ns0:MaladieCardioVasculaire rdf:about="http://www.webofdata.fr/instances#ValvulopathieCardiaque">
+    <ns0:nomMaladie>Maladie des valves cardiaques</ns0:nomMaladie>
+  </ns0:MaladieCardioVasculaire>
+
+  <ns0:MaladieCardioVasculaire rdf:about="http://www.webofdata.fr/instances#HTAP">
+    <ns0:nomMaladie>Hypertension artérielle pulmonaire</ns0:nomMaladie>
+    <ns0:seSoignePar>
+      <ns0:Betabloquant rdf:about="http://www.webofdata.fr/instances#Ternormine">
+        <ns0:nomMedicament>TENORMINE 50 mg</ns0:nomMedicament>
+        <ns0:voieAdministration>orale</ns0:voieAdministration>
+      </ns0:Betabloquant>
+    </ns0:seSoignePar>
+
+  </ns0:MaladieCardioVasculaire>
+
+  <ns0:SymptomeGeneral rdf:about="http://www.webofdata.fr/instances#Migraine">
+    <ns0:description>La migraine (du grec ancien ημικρανίον / êmikraníon, douleur touchant la « moitié du crâne ») est un type de céphalée (mal de tête) chronique fréquente, invalidante, caractérisée par des maux de tête et des nausées. La migraine est trois fois plus fréquente chez les femmes que chez les hommes. Une migraine dure généralement entre 4 et 72 heures selon sa sévérité ; les symptômes incluent nausées, vomissements, photophobie (grande sensibilité à la lumière), phonophobie (grande sensibilité au son) ; les symptômes s'aggravent généralement à cause des activités physiques. Approximativement un tiers des individus souffrant d'une migraine fait l'expérience d'une aura, illusion visuelle ou autre trouble d'ordre sensoriel ou moteur juste avant la céphalée. On pense que les migraines sont causées par l'association de facteurs environnementaux et de facteurs génétiques. Environ deux tiers des cas ont un contexte familial. L’Organisation mondiale de la santé classe la maladie migraineuse au 20e rang des maladies ayant un impact sur le handicap et l’altération de la qualité de vie, et parmi les 10 premières maladies si l’on considère uniquement la population féminine.</ns0:description>
+    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Grippe"/>
+    <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Aspirine"/>
+  </ns0:SymptomeGeneral>
+
+  <ns0:SymptomeFonctionnel rdf:about="http://www.webofdata.fr/instances#Toux">
+    <ns0:description>La toux est un acte réflexe destiné à protéger les voies aériennes, en éliminant les sécrétions bronchiques et les particules inhalées.</ns0:description>
+    <ns0:estProvoquePar rdf:resource="http://www.webofdata.fr/instances#Pharyngite"/>
+    <ns0:estSoignePar rdf:resource="http://www.webofdata.fr/instances#Oxomemazine"/>
+  </ns0:SymptomeFonctionnel>
+
+  <ns0:AntiInflammatoire rdf:about="http://www.webofdata.fr/instances#Aspirine">
+    <ns0:nomMedicament>Aspirine UPSA 1000mg</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:AntiInflammatoire>
+
+  <ns0:AntiInflammatoire rdf:about="http://www.webofdata.fr/instances#Smecta">
+    <ns0:nomMedicament>SMECTA Orange-Vanille</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:AntiInflammatoire>
+
+  <ns0:AntiDepresseur rdf:about="http://www.webofdata.fr/instances#Prozac">
+    <ns0:nomMedicament>PROZAC 20 mg</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:AntiDepresseur>
+
+  <ns0:AntiMetabolite rdf:about="http://www.webofdata.fr/instances#Fluorouracile">
+    <ns0:nomMedicament>Fluorouracile</ns0:nomMedicament>
+    <ns0:voieAdministration>injection</ns0:voieAdministration>
+  </ns0:AntiMetabolite>
+
+  <ns0:AntiInflammatoire rdf:about="http://www.webofdata.fr/instances#Aspegic">
+    <ns0:nomMedicament>ASPÉGIC 1000</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:AntiInflammatoire>
+
+  <ns0:AntiInflammatoire rdf:about="http://www.webofdata.fr/instances#Ibuprofene">
+    <ns0:nomMedicament>Ibuprofene</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:AntiInflammatoire>
+
+  <ns0:Antitussif rdf:about="http://www.webofdata.fr/instances#Oxomemazine">
+    <ns0:nomMedicament>Oxomemazine</ns0:nomMedicament>
+    <ns0:voieAdministration>orale</ns0:voieAdministration>
+  </ns0:Antitussif>
 
 </rdf:RDF>
